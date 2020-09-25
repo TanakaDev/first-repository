@@ -14,6 +14,12 @@ class Student extends Person {
     constructor(name, age) {
         super(name, age);
         School.students.push(this);
-        JSON.parse();
     }
+}
+
+let student1 = new Student("Bob", 15);
+let student2 = new Student("Joey", 14);
+
+for (const student of School.students) {
+    console.log(student.name);
 }
